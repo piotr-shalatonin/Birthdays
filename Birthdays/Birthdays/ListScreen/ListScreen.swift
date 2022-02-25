@@ -10,21 +10,30 @@ import SwiftUI
 struct ListScreen: View {
     @StateObject var viewModel: ListViewModel
     var body: some View {
-        List {
-            ForEach(viewModel.datasource) { model in
-                VStack(spacing: 0) {
-                    ProfileCellView()
+        NavigationView {
+            List {
+                ForEach(viewModel.datasource) { model in
+                    VStack(spacing: 0) {
+                        ProfileCellView(dataSource: model)
+                    }
+                    .listRowInsets(EdgeInsets(top: 0, leading: 12, bottom: 14, trailing: 12))
+                    .listRowBackground(Color.white)
+                    .gesture(
+                        TapGesture(count: 1)
+                        .onEnded() {
+                            viewModel.profileCellTapped(model: model)
+                        }
+                    )
                 }
-                .listRowSeparator(.hidden)
-                .listRowInsets(EdgeInsets(top: 0, leading: 12, bottom: 14, trailing: 12))
-                .listRowBackground(Color.gray)
+                NavigationLink("", isActive: $viewModel.showProfileScreen ) {
+                    ProfileScreen(viewModel: ProfileViewModel())
+                }
+                .hidden()
             }
         }
-        
-        Text("List Screen")
-            .onAppear {
-                viewModel.loadData()
-            }
+        .onAppear {
+            viewModel.loadData()
+        }
     }
 }
 

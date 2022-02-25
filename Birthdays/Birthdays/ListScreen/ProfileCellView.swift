@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct ProfileCellView: View {
+    var dataSource: ProfileListResultsModel
+    
     var body: some View {
-        Text("Profile Cell")
+        VStack(alignment: .leading) {
+            HStack() {
+                Text(dataSource.name.first)
+                Text(dataSource.name.last)
+            }
+            Text(dataSource.dob.date)
+        }
+        
     }
 }
 
-struct ProfileCellView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileCellView()
-    }
-}
+//struct ProfileCellView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ProfileCellView(dataSource: ProfileListResultsModel())
+//    }
+//}

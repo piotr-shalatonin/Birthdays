@@ -9,3 +9,6 @@ Steps to start project:
 
 Not finished:
 - GlobalUtils.constructURL - not finished. Should compose API url with parameters
+- Loading data indicator, when API calls are performing
+- Apply Roboto fonts
+- Set colors for the project in colors.xcassets
