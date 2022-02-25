@@ -15,6 +15,14 @@ struct ProfileCellView: View {
             RoundedRectangle(cornerRadius: 35, style: .continuous)
                 .fill(Color.gray)
                             .frame(width: 70, height: 70)
+                            .overlay(
+                                Group {
+                                    Text(dataSource.name.first.suffix(1).uppercased())
+                                    + Text("")
+                                    + Text(dataSource.name.last.suffix(1).uppercased())
+                                }
+                                .font(Font.custom("Roboto-Bold", size: 13, relativeTo: .body))
+                            )
             VStack(alignment: .leading) {
                 HStack() {
                     Group {

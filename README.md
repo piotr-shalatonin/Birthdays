@@ -22,6 +22,7 @@ Not finished:
 - Loading data indicator, when API calls are performing
 - Apply Roboto fonts
 - Set colors for the project in colors.xcassets
+- "Year"/"Years" processing through Localizable.stringsdict
 
 For the git commit message I used the following format:
 [time_when_done] description
