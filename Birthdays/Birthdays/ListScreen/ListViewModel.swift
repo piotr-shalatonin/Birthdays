@@ -32,8 +32,8 @@ class ListViewModel: ObservableObject {
             case .failure(let error):
                 print("Error - \(error.localizedDescription)")
             }
-        } receiveValue: { model in
-            
+        } receiveValue: { [weak self] model in
+            self?.datasource = model.results
         }
         .store(in: &cancellables)
     }

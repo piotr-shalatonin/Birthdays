@@ -32,6 +32,7 @@
 		5416C97127C8A7A600C4F070 /* ProfileListResultsNameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5416C97027C8A7A600C4F070 /* ProfileListResultsNameModel.swift */; };
 		5416C97327C8A7BB00C4F070 /* ProfileListResultsDobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5416C97227C8A7BB00C4F070 /* ProfileListResultsDobModel.swift */; };
 		5416C97527C8A8DC00C4F070 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5416C97427C8A8DC00C4F070 /* NetworkManager.swift */; };
+		5416C97827C8B2DB00C4F070 /* ProfileCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5416C97727C8B2DB00C4F070 /* ProfileCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		5416C97027C8A7A600C4F070 /* ProfileListResultsNameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileListResultsNameModel.swift; sourceTree = "<group>"; };
 		5416C97227C8A7BB00C4F070 /* ProfileListResultsDobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileListResultsDobModel.swift; sourceTree = "<group>"; };
 		5416C97427C8A8DC00C4F070 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		5416C97727C8B2DB00C4F070 /* ProfileCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +136,8 @@
 				5416C91F27C89E3D00C4F070 /* BirthdaysApp.swift */,
 				5416C94C27C89F5000C4F070 /* Global */,
 				5416C94A27C89F2000C4F070 /* Services */,
-				5416C94927C89F0D00C4F070 /* Screens */,
+				5416C94927C89F0D00C4F070 /* ListScreen */,
+				5416C97627C8B29600C4F070 /* ProfileScreen */,
 				5416C94B27C89F2F00C4F070 /* MyResources */,
 				5416C92527C89E3F00C4F070 /* Preview Content */,
 			);
@@ -166,15 +169,14 @@
 			path = BirthdaysUITests;
 			sourceTree = "<group>";
 		};
-		5416C94927C89F0D00C4F070 /* Screens */ = {
+		5416C94927C89F0D00C4F070 /* ListScreen */ = {
 			isa = PBXGroup;
 			children = (
 				5416C96127C8A1EF00C4F070 /* ListScreen.swift */,
 				5416C96527C8A21E00C4F070 /* ListViewModel.swift */,
-				5416C96327C8A20300C4F070 /* ProfileScreen.swift */,
-				5416C96727C8A23600C4F070 /* ProfileViewModel.swift */,
+				5416C97727C8B2DB00C4F070 /* ProfileCellView.swift */,
 			);
-			path = Screens;
+			path = ListScreen;
 			sourceTree = "<group>";
 		};
 		5416C94A27C89F2000C4F070 /* Services */ = {
@@ -229,6 +231,15 @@
 				5416C96C27C8A67100C4F070 /* ProfileListInfoModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5416C97627C8B29600C4F070 /* ProfileScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5416C96327C8A20300C4F070 /* ProfileScreen.swift */,
+				5416C96727C8A23600C4F070 /* ProfileViewModel.swift */,
+			);
+			path = ProfileScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,6 +391,7 @@
 				5416C97327C8A7BB00C4F070 /* ProfileListResultsDobModel.swift in Sources */,
 				5416C97127C8A7A600C4F070 /* ProfileListResultsNameModel.swift in Sources */,
 				5416C96F27C8A76600C4F070 /* ProfileListResultsModel.swift in Sources */,
+				5416C97827C8B2DB00C4F070 /* ProfileCellView.swift in Sources */,
 				5416C96D27C8A67100C4F070 /* ProfileListInfoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
