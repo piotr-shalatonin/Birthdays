@@ -31,6 +31,7 @@
 		5416C96F27C8A76600C4F070 /* ProfileListResultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5416C96E27C8A76600C4F070 /* ProfileListResultsModel.swift */; };
 		5416C97127C8A7A600C4F070 /* ProfileListResultsNameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5416C97027C8A7A600C4F070 /* ProfileListResultsNameModel.swift */; };
 		5416C97327C8A7BB00C4F070 /* ProfileListResultsDobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5416C97227C8A7BB00C4F070 /* ProfileListResultsDobModel.swift */; };
+		5416C97527C8A8DC00C4F070 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5416C97427C8A8DC00C4F070 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		5416C96E27C8A76600C4F070 /* ProfileListResultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileListResultsModel.swift; sourceTree = "<group>"; };
 		5416C97027C8A7A600C4F070 /* ProfileListResultsNameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileListResultsNameModel.swift; sourceTree = "<group>"; };
 		5416C97227C8A7BB00C4F070 /* ProfileListResultsDobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileListResultsDobModel.swift; sourceTree = "<group>"; };
+		5416C97427C8A8DC00C4F070 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				5416C96927C8A56500C4F070 /* Models */,
+				5416C97427C8A8DC00C4F070 /* NetworkManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				5416C96227C8A1EF00C4F070 /* ListScreen.swift in Sources */,
 				5416C96427C8A20300C4F070 /* ProfileScreen.swift in Sources */,
 				5416C96627C8A21E00C4F070 /* ListViewModel.swift in Sources */,
+				5416C97527C8A8DC00C4F070 /* NetworkManager.swift in Sources */,
 				5416C95427C8A04B00C4F070 /* GlobalUtils.swift in Sources */,
 				5416C96B27C8A5E600C4F070 /* ProfileListModel.swift in Sources */,
 				5416C95627C8A05E00C4F070 /* GlobalConstants.swift in Sources */,

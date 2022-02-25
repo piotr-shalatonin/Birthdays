@@ -11,6 +11,9 @@ struct ListScreen: View {
     @StateObject var viewModel: ListViewModel
     var body: some View {
         Text("List Screen")
+            .onAppear {
+                viewModel.loadData()
+            }
     }
 }
 

@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+enum GlobalConstants {
+    enum Network {
+        static let scheme = "https"
+        static let baseURL = "randomuser.me/api"
+        static let getMethod = "GET"
+        static let contentTypeHeaderKey = "Content-Type"
+        static let contentTypeJSONHeaderValue = "application/json"
+        
+        static let getProfilesListEndpoint = "/?results=5&seed=chalkboard&inc=name,dob"
+    }
+}

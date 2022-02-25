@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct ProfileListResultsModel: Codable {
+struct ProfileListResultsModel: Codable, Identifiable {
+    let id = UUID()
     let name: ProfileListResultsNameModel
     let dob: ProfileListResultsDobModel
 
