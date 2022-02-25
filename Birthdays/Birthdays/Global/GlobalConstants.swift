@@ -15,6 +15,8 @@ enum GlobalConstants {
         static let contentTypeHeaderKey = "Content-Type"
         static let contentTypeJSONHeaderValue = "application/json"
         
-        static let getProfilesListEndpoint = "/?results=5&seed=chalkboard&inc=name,dob"
+        static let getProfilesListEndpoint = "/?results=15&seed=chalkboard&inc=name,dob"
+        // Full url should be: 'https://randomuser.me/api/?results=5&seed=chalkboard&inc=name,dob'
+        static let getProfilesListEndpointFull = "\(scheme)://\(baseURL)\(getProfilesListEndpoint)"
     }
 }

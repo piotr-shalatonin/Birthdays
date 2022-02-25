@@ -34,7 +34,7 @@ extension ListViewModel {
 //        var url: URL?
 //        url = GlobalUtils.constructURL(for: GlobalConstants.Network.getProfilesListEndpoint)
 
-        let url = URL.init(string: "https://randomuser.me/api/?results=5&seed=chalkboard&inc=name,dob")
+        let url = URL.init(string: GlobalConstants.Network.getProfilesListEndpointFull)
         
         guard let url = url else { return nil }
         var urlRequest = URLRequest(url: url)

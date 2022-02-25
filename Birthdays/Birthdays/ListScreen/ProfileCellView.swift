@@ -11,12 +11,22 @@ struct ProfileCellView: View {
     var dataSource: ProfileListResultsModel
     
     var body: some View {
-        VStack(alignment: .leading) {
-            HStack() {
-                Text(dataSource.name.first)
-                Text(dataSource.name.last)
+        HStack() {
+            RoundedRectangle(cornerRadius: 35, style: .continuous)
+                .fill(Color.gray)
+                            .frame(width: 70, height: 70)
+            VStack(alignment: .leading) {
+                HStack() {
+                    Group {
+                        Text(dataSource.name.first)
+                        + Text("")
+                        + Text(dataSource.name.last)
+                    }
+                    .font(Font.custom("Roboto-Bold", size: 13, relativeTo: .body))
+                }
+                Text(dataSource.dob.date)
+                    .font(Font.custom("Roboto-Regular", size: 13, relativeTo: .body))
             }
-            Text(dataSource.dob.date)
         }
         
     }

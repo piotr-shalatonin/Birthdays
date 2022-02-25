@@ -9,3 +9,4 @@
 "listScreen.title" = "Birthdays";
 
 "profileScreen.ageLabel" = "YEARS OLD";
+"profileScreen.backButton" = "GO BACK";

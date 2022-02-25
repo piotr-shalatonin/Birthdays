@@ -9,8 +9,10 @@ import SwiftUI
 
 struct ProfileScreen: View {
     @StateObject var viewModel: ProfileViewModel
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     var body: some View {
-        VStack {
+        VStack(spacing: 20) {
             HStack() {
                 Text(viewModel.dataSource.name.first)
                 Text(viewModel.dataSource.name.last)
@@ -19,6 +21,21 @@ struct ProfileScreen: View {
                 Text(String(viewModel.dataSource.dob.age))
                 Text("profileScreen.ageLabel")
             }
+            
+            Button {
+                self.presentationMode.wrappedValue.dismiss()
+            } label: {
+                Text("profileScreen.backButton")
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .foregroundColor(.white)
+                    .padding(13)
+                    .background(.black)
+                    .cornerRadius(4)
+            }
+            .padding(.horizontal, 50)
+            
+                
+            Spacer()
         }
         
     }
