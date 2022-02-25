@@ -26,10 +26,15 @@ struct ListScreen: View {
                     )
                 }
                 NavigationLink("", isActive: $viewModel.showProfileScreen ) {
-                    ProfileScreen(viewModel: ProfileViewModel())
+                    if let selectedItem = viewModel.selectedItem {
+                        ProfileScreen(viewModel: ProfileViewModel(dataSource: selectedItem))
+                    }
                 }
                 .hidden()
             }
+            .navigationBarTitle(
+                Text("listScreen.title")
+            )
         }
         .onAppear {
             viewModel.loadData()

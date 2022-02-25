@@ -8,5 +8,9 @@
 import Foundation
 
 class ProfileViewModel: ObservableObject {
+    var dataSource: ProfileListResultsModel
     
+    init(dataSource: ProfileListResultsModel) {
+        self.dataSource = dataSource
+    }
 }
